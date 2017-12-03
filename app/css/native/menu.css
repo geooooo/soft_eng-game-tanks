@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'capture_itregular';
+  src: url("/app/font/Capture_it-webfont.eot"), url("/app/font/Capture_it-webfont.eot?#iefix") format('embedded-opentype'), url("/app/font/Capture_it-webfont.woff") format('woff'), url("/app/font/Capture_it-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+}
+html,
+body,
+.main {
+  height: 100%;
+}
+.main {
+  background-color: #ccc;
+  font-size: 20px;
+}
+/* =========== Раздел переменных =========== */
+/* =========== Раздел css-правил =========== */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/app/img/menu_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-menu {
+  right: 50px;
+  font-family: 'capture_itregular';
+}
+.main-menu-list {
+  overflow: hidden;
+  background-color: rgba(200,200,200,0.1);
+  border-radius: 5px;
+  padding: 10px;
+}
+.main-menu-list-item {
+  border: 3px dashed #000;
+  margin-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+.main-menu-list-item:hover {
+  background-color: #000;
+}
+.main-menu-list-item:last-child {
+  margin-bottom: 0;
+}
+.main-menu-list-item a {
+  display: block;
+  padding: 5px;
+  color: #000;
+  transition: color 0.3s linear;
+}
+.main-menu-list-item a:hover {
+  color: #fff;
+}
+.main-copy {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

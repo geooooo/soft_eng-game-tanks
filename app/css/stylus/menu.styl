@@ -1,0 +1,56 @@
+@require "base.styl"
+
+/* =========== Раздел переменных =========== */
+
+main-bg = url("/app/img/menu_bg.jpg")
+menu-right = 50px
+item-margin = 15px
+item-font-color = black
+item-font-color-hover = white
+
+/* =========== Раздел css-правил =========== */
+
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: main-bg
+    background-repeat: no-repeat
+    background-size: cover
+
+
+.main-menu
+    right: menu-right
+    font-family: 'capture_itregular'
+
+
+.main-menu-list
+    overflow: hidden
+    background-color: rgba(200, 200, 200, 10%)
+    border-radius: 5px
+    padding: 10px
+
+
+.main-menu-list-item
+    border: 3px dashed item-font-color
+    margin-bottom: item-margin
+    text-align: center
+    cursor: pointer
+    transition: background-color 0.3s linear
+    &:hover
+        background-color: item-font-color
+    &:last-child
+        margin-bottom: 0
+    a
+        display: block
+        padding: 5px
+        color: item-font-color
+        transition: color 0.3s linear
+        &:hover
+            color: item-font-color-hover
+
+
+.main-copy
+    position: absolute
+    bottom: 5px
+    right: 5px
