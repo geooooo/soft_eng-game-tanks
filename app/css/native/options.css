@@ -29,59 +29,58 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/app/img/about_bg.jpg");
+  background-image: url("/app/img/options_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .main .main-options {
-  background-color: rgba(200,200,200,0.1);
+  background-color: rgba(200,200,200,0.15);
   border-radius: 5px;
   max-width: 500px;
   padding: 10px;
 }
-.main .main-options .main-about-header {
+.main .main-options .main-options-item {
   margin-bottom: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 3px dashed #000;
-  font-size: about-header-font-size;
+}
+.main .main-options .main-options-item .main-options-item-caption {
+  margin-bottom: 5px;
+  font-size: 0.9em;
   text-align: center;
 }
-.main .main-options .main-about-content {
-  padding: 10px;
-  line-height: 1.2;
+.main .main-options .main-options-item .main-options-item-line_time {
+  background-color: #ddd;
+  height: 10px;
+  cursor: pointer;
 }
-.main .main-options .main-about-content .main-about-content-caption {
-  color: #123;
+.main .main-options .main-options-item .main-options-item-line_time .main-options-item-current_line_time {
+  background-color: #000;
+  height: 10px;
+  width: 30%;
 }
-.main .main-options .main-about-content .main-about-content-name {
-  color: #132;
-  text-decoration: underline;
-}
-.main .main-options .main-about-menu {
+.main .main-options .main-options-menu {
   display: block;
+  width: 200px;
   border: 3px solid #000;
   border-radius: 5px;
   margin-bottom: 15px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s linear;
-  width: 200px;
   margin: auto;
   margin-top: 10px;
 }
-.main .main-options .main-about-menu:hover {
+.main .main-options .main-options-menu:hover {
   background-color: #000;
 }
-.main .main-options .main-about-menu:last-child {
+.main .main-options .main-options-menu:last-child {
   margin-bottom: 0;
 }
-.main .main-options .main-about-menu a {
+.main .main-options .main-options-menu a {
   display: block;
   padding: 5px;
   color: #000;
   transition: color 0.3s linear;
 }
-.main .main-options .main-about-menu a:hover {
+.main .main-options .main-options-menu a:hover {
   color: #fff;
 }

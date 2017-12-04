@@ -2,10 +2,10 @@
 
 /* =========== Раздел переменных =========== */
 
-main-bg = url("/app/img/about_bg.jpg")
+main-bg = url("/app/img/options_bg.jpg")
 option-caption-font-size = 0.9em
-caption-font-color = #123
-name-font-color = #132
+line_time-color = #ddd
+current_line_time-color = base-font-color
 
 /* =========== Раздел css-правил =========== */
 
@@ -19,36 +19,34 @@ name-font-color = #132
 
 
     .main-options
-        background-color: rgba(200, 200, 200, 10%)
+        background-color: rgba(200, 200, 200, 15%)
         border-radius: 5px
         max-width: 500px
         padding: 10px
 
 
-        .main-about-header
+        .main-options-item
             margin-bottom: 20px
-            padding-top: 10px
-            padding-bottom: 10px
-            border-bottom: 3px dashed base-font-color
-            font-size: about-header-font-size
-            text-align: center
 
 
-        .main-about-content
-            padding: 10px
-            line-height: 1.2
-
-            .main-about-content-caption
-                color: caption-font-color
+            .main-options-item-caption
+                margin-bottom: 5px
+                font-size: 0.9em
+                text-align: center
 
 
-            .main-about-content-name
-                color: name-font-color
-                text-decoration: underline
+            .main-options-item-line_time
+                background-color: line_time-color
+                height: 10px
+                cursor: pointer
 
 
-        .main-about-menu
+                .main-options-item-current_line_time
+                    background-color: current_line_time-color
+                    height: 10px
+                    width: 30%
+
+        .main-options-menu
             mx_button()
-            width: 200px
             margin: auto
             margin-top: 10px

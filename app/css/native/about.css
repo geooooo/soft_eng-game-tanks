@@ -34,7 +34,7 @@ body,
   background-size: cover;
 }
 .main .main-about {
-  background-color: rgba(200,200,200,0.1);
+  background-color: rgba(200,200,200,0.15);
   border-radius: 5px;
   max-width: 500px;
   padding: 10px;
@@ -53,21 +53,21 @@ body,
   line-height: 1.2;
 }
 .main .main-about .main-about-content .main-about-content-caption {
-  color: #123;
+  color: #222;
 }
 .main .main-about .main-about-content .main-about-content-name {
-  color: #132;
+  color: #333;
   text-decoration: underline;
 }
 .main .main-about .main-about-menu {
   display: block;
+  width: 200px;
   border: 3px solid #000;
   border-radius: 5px;
   margin-bottom: 15px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s linear;
-  width: 200px;
   margin: auto;
   margin-top: 10px;
 }
