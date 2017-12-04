@@ -29,17 +29,37 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/app/img/menu_bg.jpg");
+  background-image: url("/app/img/about_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main .main-menu-list {
-  overflow: hidden;
+.main .main-about {
   background-color: rgba(200,200,200,0.1);
   border-radius: 5px;
+  max-width: 500px;
   padding: 10px;
 }
-.main .main-menu-list-item {
+.main .main-about .main-about-header {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px dashed #000;
+  font-size: 2em;
+  text-align: center;
+}
+.main .main-about .main-about-content {
+  padding: 10px;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+.main .main-about .main-about-content .main-about-content-caption {
+  color: #123;
+}
+.main .main-about .main-about-content .main-about-content-name {
+  color: #132;
+  text-decoration: underline;
+}
+.main .main-about .main-about-menu {
   display: block;
   border: 3px solid #000;
   border-radius: 5px;
@@ -47,24 +67,22 @@ body,
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s linear;
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
 }
-.main .main-menu-list-item:hover {
+.main .main-about .main-about-menu:hover {
   background-color: #000;
 }
-.main .main-menu-list-item:last-child {
+.main .main-about .main-about-menu:last-child {
   margin-bottom: 0;
 }
-.main .main-menu-list-item a {
+.main .main-about .main-about-menu a {
   display: block;
   padding: 5px;
   color: #000;
   transition: color 0.3s linear;
 }
-.main .main-menu-list-item a:hover {
+.main .main-about .main-about-menu a:hover {
   color: #fff;
-}
-.main .main-copy {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
 }

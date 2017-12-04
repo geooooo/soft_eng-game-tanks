@@ -1,0 +1,29 @@
+/* =========== Раздел переменных =========== */
+/* =========== Раздел миксинов =========== */
+/* =========== Раздел css медиа-запросов =========== */
+@font-face {
+  font-family: 'capture_itregular';
+  src: url("/app/font/Capture_it-webfont.eot"), url("/app/font/Capture_it-webfont.eot?#iefix") format('embedded-opentype'), url("/app/font/Capture_it-webfont.woff") format('woff'), url("/app/font/Capture_it-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* =========== Раздел css-правил =========== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  font-family: 'capture_itregular';
+}
+html,
+body,
+.main {
+  height: 100%;
+}
+.main {
+  background-color: #ccc;
+  font-size: 20px;
+}
